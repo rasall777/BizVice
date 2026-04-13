@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/roadmap.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/roadmap", "dest": "/api/roadmap.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
