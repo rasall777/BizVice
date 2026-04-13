@@ -53,7 +53,8 @@ Give a realistic 6-month and 12-month revenue estimate based on their budget and
 Be specific to THEIR idea throughout. Never give generic advice. Use their background and budget to make every recommendation realistic. Be direct, sharp, and motivating — like a smart friend who refuses to let them fail.`;
 
   try {
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent`;
+    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash
+:generateContent`;
 
     const response = await fetch(geminiUrl, {
       method: 'POST',
